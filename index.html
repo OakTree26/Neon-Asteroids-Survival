@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Neon Asteroids Survival</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div id="uiLayer">
+        <div id="scoreDisplay">SCORE: <span id="scoreValue">0</span></div>
+        <div id="livesDisplay">LIVES: <span id="livesValue">3</span></div>
+    </div>
+
+    <div id="centerMessage" class="hidden">
+        <h1 id="mainTitle">GAME OVER</h1>
+        <p id="subTitle">Final Score: 0</p>
+        <p style="font-size: 18px; margin-top: 30px;">Press SPACE to return to Hanger</p>
+    </div>
+
+    <div id="mainMenu">
+        <h1 id="menuTitle">NEON ASTEROIDS</h1>
+
+        <div class="customization-section">
+            <p style="font-size: 18px; color: #fff;">SELECT SHIP COLOR</p>
+            <div class="swatch-container">
+                <div class="swatch active" style="background: #0ff; box-shadow: 0 0 15px #0ff" data-color="#0ff"></div>
+                <div class="swatch" style="background: #f0f; box-shadow: 0 0 15px #f0f" data-color="#f0f"></div>
+                <div class="swatch" style="background: #0f0; box-shadow: 0 0 15px #0f0" data-color="#0f0"></div>
+                <div class="swatch" style="background: #fa0; box-shadow: 0 0 15px #fa0" data-color="#fa0"></div>
+                <div class="swatch" style="background: #f00; box-shadow: 0 0 15px #f00" data-color="#f00"></div>
+            </div>
+        </div>
+
+        <button id="startBtn">LAUNCH</button>
+        <p style="font-size: 16px; margin-top: 30px;">w/UP to Thrust | A/D/Left/Right to Rotate | Space to Shoot</p>
+    </div>
+</div>
+
+<div id="scanlines"></div>
+
+<canvas id="gameCanvas"></canvas>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
